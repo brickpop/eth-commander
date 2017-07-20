@@ -18,6 +18,9 @@
     "utilities",
     "etc"
   ],
+  "directories": {
+    "bin": "./bin"
+  },
   "author": "Jordi Moraleda <jordi@tvrbo.pro>",
   "license": "ISC",
   "bugs": {
@@ -27,6 +30,7 @@
   "dependencies": {
     "open": "0.0.5",
     "shelljs": "^0.7.8",
+    "unzip": "^0.1.11",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
