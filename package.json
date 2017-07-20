@@ -1,0 +1,42 @@
+{
+  "name": "eth-commander",
+  "version": "0.6.0",
+  "description": "Ethereum Blockchain Commander is a set of utilities that help compile, deploy, test and run transactions in the blockchain",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ledfusion/eth-commander.git"
+  },
+  "keywords": [
+    "ethereum",
+    "commander",
+    "command",
+    "tools",
+    "utilities",
+    "etc"
+  ],
+  "author": "Jordi Moraleda <jordi@tvrbo.pro>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ledfusion/eth-commander/issues"
+  },
+  "homepage": "https://github.com/ledfusion/eth-commander#readme",
+  "dependencies": {
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
