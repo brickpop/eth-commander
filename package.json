@@ -25,16 +25,19 @@
   },
   "homepage": "https://github.com/ledfusion/eth-commander#readme",
   "dependencies": {
+    "open": "0.0.5",
+    "shelljs": "^0.7.8",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^4.2.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.2"
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
   },
   "lint-staged": {
-    "*.js": [
+    "lib/*.js": [
       "prettier --write",
       "git add"
     ]
