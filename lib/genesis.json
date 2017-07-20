@@ -9,7 +9,7 @@
     "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "timestamp": "0x00",
     "config": {
-        "chainId": 0,
+        "chainId": 10,
         "homesteadBlock": 0,
         "eip155Block": 0,
         "eip158Block": 0
