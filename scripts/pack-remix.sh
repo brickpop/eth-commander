@@ -11,7 +11,7 @@ unzip remix.zip
 
 echo "Building..."
 cd browser-solidity-master
-npm install
+NODE_ENV=production npm install
 cd ..
 
 mkdir -p ../remix
