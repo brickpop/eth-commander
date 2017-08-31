@@ -1,23 +1,15 @@
 #!/bin/bash
 
-rm -Rf ../remix ./remix.zip ./browser-solidity-master
+rm -Rf ../remix ./remix.zip ./browser-solidity-gh-pages
 
 echo "Fetching the Remix IDE..."
-wget https://codeload.github.com/ethereum/browser-solidity/zip/master
-mv master remix.zip
+wget https://codeload.github.com/ethereum/browser-solidity/zip/gh-pages
+mv gh-pages remix.zip
 
 echo "Extracting..."
 unzip remix.zip
-
-echo "Building..."
-cd browser-solidity-master
-NODE_ENV=production npm install
-cd ..
-
-mkdir -p ../remix
-cp -R ./browser-solidity-master/{assets,build,*.html,*.js,*.png} ../remix
+mv browser-solidity-gh-pages ../remix
+rm ../remix/*.zip
 
 echo "Cleanup..."
-rm -Rf ./remix.zip ./browser-solidity-master
-
-echo "Done"
+rm -Rf ./remix.zip ./browser-solidity-gh-pages
