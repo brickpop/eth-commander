@@ -1,6 +1,6 @@
 {
   "name": "eth-commander",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Ethereum Blockchain Commander is a set of utilities that help compile, deploy, test and run transactions in the blockchain",
   "main": "index.js",
   "scripts": {
