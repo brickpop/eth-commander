@@ -17,7 +17,7 @@ This will create a local `geth` node with an initial account (if needed). To unl
 You can launch the Remix IDE on top of a local `geth` node by running:
 
 ```
-geth ide
+ec ide
 ```
 
 A browser will open. From the "Environment" dropdown in Remix, choose "Web3 provider" and enter the URL of your RPC node.
